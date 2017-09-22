@@ -16,10 +16,10 @@
 eureka:
     instance:
         prefer-ip-address: false
-        hostname: localhost
+        hostname: 192.168.43.222
     client:
         service-url:
-            defaultZone: http://admin:admin@localhost:8761/eureka/
+            defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE} #http://admin:admin@localhost:8761/eureka/
 
 spring:
     profiles:
